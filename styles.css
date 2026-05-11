@@ -1,0 +1,157 @@
+/* =========================
+   CONFIGURACION GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: url('fondo_4.png') center center / cover no-repeat fixed;
+    color: white;
+}
+
+/* Capa oscura suave sobre la imagen */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, f0, 0, 0);
+    z-index: -1;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+#title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.nav-item a {
+    color: #ffd700 !important;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+nav button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    cursor: pointer;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Secciones transparentes */
+section {
+    background: rgba(255,255,255,0.08);
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+
+    .main-content {
+        padding: 3rem;
+    }
+
+    .three-columns {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+}
+
+/* =========================
+   DESKTOP GRANDE
+========================= */
+
+@media (min-width: 1200px) {
+
+    .main-content {
+        width: 95%;
+        margin: auto;
+    }
+
+    section {
+        padding: 2.5rem;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: transparent;
+}

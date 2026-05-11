@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Curriculum Maricel Micó, especialista Informática, amplia experiencia en administración  redes, seguridad informática, atención usuarios y desarrollador web" />
+    <meta name="keywords" content="informática, redes, usuarios, web, programador, seguridad"/>
+    <meta name="author" content="Maricel Micó" />
+    <title> Maricel Micó, perfil</title>
+<style> 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: url('fondo_4.png') center center / cover no-repeat fixed;
+    color: white;
+}
+
+/* Capa oscura suave sobre la imagen */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, f0, 0, 0);
+    z-index: -1;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+#title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.nav-item a {
+    color: #ffd700 !important;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+nav button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    cursor: pointer;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Secciones transparentes */
+section {
+    background: rgba(255,255,255,0.08);
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .main-content {
+        padding: 3rem;
+    }
+
+    .three-columns {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .main-content {
+        width: 95%;
+        margin: auto;
+    }
+
+    section {
+        padding: 2.5rem;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: transparent;
+}
+</style>
+</head>
+
+<body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+           <!-- Esto es un comentario  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Maricel Micó, Informática</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resumen</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+                     <nav class="navbar navbar-expand-lg navbar-dark py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Maricel Micó, Informática</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Currículo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+      <!--<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Maricel Micó, Informática</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>-->
+  <header>
+    <h1 id="title">Maricel Micó</h1>
+
+    <nav>
+      <button onclick="setLang('es')">ES</button>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ru')">RU</button>
+    </nav>
+  </header>
+
+ <main class="main-content">
+    <section class="about-section">
+      <h2 id="about-title"></h2>
+      <p id="about-text"></p>
+    </section>
+
+    <div class="three-columns">
+      <section>
+        <h2 id="cv-title"></h2>
+        <p id="cv-text"></p>
+      </section>
+
+      <section>
+        <h2 id="studies-title"></h2>
+        <p id="studies-text"></p>
+      </section>
+
+      <section>
+        <h2 id="interests-title"></h2>
+        <p id="interests-text"></p>
+      </section>
+    </div>
+</main>
+
+  <footer>
+    <p>© 2026 Maricel Mico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
