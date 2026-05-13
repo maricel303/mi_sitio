@@ -145,7 +145,17 @@ section p {
         padding: 2.5rem;
     }
 }
+#contactForm {
+    width: 100%;
+}
 
+.form-control {
+    width: 100%;
+}
+
+textarea.form-control {
+    min-height: 250px;
+}
 /* =========================
    FOOTER
 ========================= */
