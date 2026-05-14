@@ -9,13 +9,16 @@
     <style>
         body {
             margin: 0;
-        }
+            overflow: hidden;
+            }
+
+               
         .hero-section {
             position: relative;
             width: 100%;
-            height: 100vh;
-            background-color: #05696B
-            background-image: url('tu-imagen.jpg');
+            height: calc(100vh - 56px - 40px);
+            padding-top: 20px;
+            background-color: #05696B;
             background-size: cover;
             background-position: center;
             display: flex;
@@ -37,12 +40,29 @@
             z-index: 2;
             text-align: center;
             color: white;
+            margin-top: 40px; /* baja la imagen */
         }
+        
         img {
             max-width: 100%;
             height: auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+                    }
+
+        .footer {
+            height: 40px;          /* footer más pequeño */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #212529; /* mismo tono navbar */
+            color: white;
+            font-size: 0.9rem;
+            margin: 0;
+            padding: 0;
+                }
+        .footer p {
+            margin: 0;
+                }
     </style>
 </head>
 <body>
@@ -72,7 +92,9 @@
             <img src="curriculo.png" alt="curriculo" class="img-fluid">
         </div>
     </section>
-
+      <div class="footer">
+         <p>© 2026 Maricel Mico</p>
+        </div>
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
